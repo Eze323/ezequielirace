@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'MiFuente';
-    src: url(fuente/BebasNeue-Regular.ttf);
+    src: url(https://eze323.github.io/ezequielirace/BebasNeue-Regular.ttf);
     }
 
 
@@ -8,18 +8,71 @@ body{width: 100%;
     height: 100%;
 
 }
+html{
+    min-height: 100%;
+    position: relative;
+}
+body{width: 100%;
+    height: 100%;
 
+}
+
+.ventana-login h2{
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #d3e9e9;
+}
 .ventana-login{
+    
     margin: 20px;
     min-width:300px ;
     min-height: 200px;;
     width: 80%;
     height: 60%;
-    border: 5px rgb(30, 144, 255) ;
-    background-color: #add8e6;
+    border: 5px solid rgb(30, 144, 255) ;
+    background-color:#3d5860;
     align-content: center;
-    margin-left: 10%;margin-right: 10%;
+    margin: auto;
+    box-shadow:#3d5860 5px 5px;
 }
+
+.ventana-login form{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 86%;
+    margin: auto;
+   /* padding: 30px;*/
+}
+
+.ventana-login input{
+    display: block;
+    width: 90%;
+    margin: 18px 5%;
+    box-sizing: border-box;
+    padding: 8px;
+    background: transparent;
+    color: #d3e9e9;
+
+}
+.ventana-login input:hover{
+    color: darkorange;
+}
+
+.ventana-login input:hover::placeholder{
+    color: darkorange;
+    
+}
+
+.ventana-login input::placeholder{
+    color: #d3e9e9;
+}
+
+.ventana-login input[type="submit"]{
+ width: 60%;
+ padding: 15px;   
+}
+
+
 body{
     background-color: beige;
     font-family: 'MiFuente','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;

@@ -27,6 +27,7 @@ function crearListado(cant){
 }
 
 
+
 const $mapaElementos= document.querySelector("#mapa");
 $mapaElementos.onclick= function(){
     alert("hiciste click");
