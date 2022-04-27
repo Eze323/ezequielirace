@@ -26,7 +26,7 @@ const validarCampos = ()=>{
         
     }else{
         error[0]=false;
-        error[1]=""Iniciando sesión";
+        error[1]="Iniciando sesión";
     }
 
     return error;
