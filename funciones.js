@@ -28,12 +28,8 @@ const validarCampos = ()=>{
         error[0]=false;
         error[1]="Iniciando sesión";
     }
-
     return error;
-
 }
-
-
 
 function clearInterval(){
     alert("hola mundo");
