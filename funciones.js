@@ -35,6 +35,6 @@ const validarCampos = ()=>{
 
 
 
-funcion clearInterval(){
+function clearInterval(){
     alert("hola mundo");
 }
