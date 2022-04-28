@@ -12,9 +12,11 @@ boton.addEventListener("click",(e)=>{
         if(error[0]){
             resultado.innerHTML = error[1];
             resultado.classList.add("red");
+            resultado.classList.remove("green");
         }else{
             resultado.innerHTML = error[1];
             resultado.classList.add("green");
+            resultado.classList.remove("red");
         }
 })
 
