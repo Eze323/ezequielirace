@@ -35,6 +35,7 @@ body{width: 100%;
     align-content: center;
     margin: auto;
     box-shadow:#3d5860 5px 5px;
+    margin-bottom: 20px;
 }
 
 .ventana-login form{
@@ -72,7 +73,7 @@ body{width: 100%;
  padding: 15px;   
 }
 .resultado{
-    width: 86%;
+    width: 90%;
     margin: auto;
 }
 .green{
