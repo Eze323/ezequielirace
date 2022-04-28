@@ -259,6 +259,7 @@ article h1{
     background-color: darkorange;
     font-style: italic;
 }
+
 #detalles{
     display: none;
     background-color: beige;
@@ -268,7 +269,7 @@ article h1{
 
 }
 
-#detalles div{
+.detall{
     float: left;
     width: 25%;
 }

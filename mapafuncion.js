@@ -8,7 +8,7 @@ let Equipo ={
     IS_MONITORED:"TRUE"
     };
 
-console.log(Equipo);
+//console.log(Equipo);
 
 function crearListado(cant){
 
@@ -26,7 +26,6 @@ function crearListado(cant){
             
             nuevoElemento.setAttribute("id",id);
             nuevoElemento.appendChild(valorElemento);
-            
             nodoPagina.appendChild(nuevoElemento);    
             
         }
@@ -37,8 +36,16 @@ function crearListado(cant){
 
 const $mapaElementos= document.querySelector("#mapa");
 $mapaElementos.onclick= function(e){
-    let item= e.target.id;
+    let item = e.target.id;
     alert("hiciste click en el equipamento : "+item);
+   
+
+    document.getElementById("escenario").innerHTML+= Equipo.SCENARIO;
+    document.getElementById("area").innerHTML+= Equipo.AREA;
+    document.getElementById("local").innerHTML+= Equipo.LOCAL;
+    document.getElementById("nickname").innerHTML+= Equipo.NICKNAME;
+
+
 }
 
 
