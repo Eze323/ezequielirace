@@ -33,8 +33,11 @@ img {
     height: auto;
 }
 
- .menu-item {
+.fp-video, .ft-art, .menu-item {
     display: inline-block;
+}
+h1,h2,h3,h4,h5,figure,ul {
+    margin: 0;
 }
 
 a{
