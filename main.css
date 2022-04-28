@@ -3,19 +3,65 @@
     src: url(https://eze323.github.io/ezequielirace/BebasNeue-Regular.ttf);
     }
 
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,300,400,100italic,300italic);
 
-body{width: 100%;
-    height: 100%;
 
+html {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
+
+
 html{
     min-height: 100%;
     position: relative;
 }
+
 body{width: 100%;
     height: 100%;
 
 }
+
+
+.contenedor{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* logo */
+
+.logo{
+    margin: 25px;
+    text-align: center;
+
+}
+
+/* Posición y estilos del menú de navegación */
+
+nav{
+    background-color: #2E353E;
+    text-align: center;
+}
+
+.menu-item{
+    text-transform: uppercase;
+}
+.menu-item a div{
+    padding: 20px;
+}
+.menu-item a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu-item :hover{
+    background-color: #0BC5D8;
+}
+
+
+
+
+
+
 
 .ventana-login h2{
     display: block;
