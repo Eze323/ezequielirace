@@ -42,7 +42,7 @@ body{width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 86%;
     margin: auto;
-   /* padding: 30px;*/
+    color:#fff;
 }
 
 .ventana-login input{
