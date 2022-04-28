@@ -1,16 +1,23 @@
+let Equipo ={
+    LOCATION_ID: "1160" , 
+    SCENARIO:"FABRICA", 
+    AREA:"ARMADO", 
+    LOCAL:"A70-FLEXI 1", 
+    LOCAL_DETAIL:"CF1", 
+    NICKNAME:"A70-F1", 
+    IS_MONITORED:"TRUE"
+    };
 
+console.log(Equipo);
 
 function crearListado(cant){
 
         const nodoPagina = document.querySelector('#mapa')
-        
-            
-
 
         for(i=0; i<cant;i++ ){
             
             const nuevoElemento = document.createElement('div');
-            var id="seleccion-"+(i+1);
+            var id="item-"+(i+1);
             //console.log(id);
             //var a= document.createAttribute("id","'"+id+"'");
                         
@@ -29,9 +36,15 @@ function crearListado(cant){
 
 
 const $mapaElementos= document.querySelector("#mapa");
-$mapaElementos.onclick= function(){
-    alert("hiciste click");
+$mapaElementos.onclick= function(e){
+    let item= e.target.id;
+    alert("hiciste click en el equipamento : "+item);
 }
 
 
 crearListado(160);
+
+
+
+
+

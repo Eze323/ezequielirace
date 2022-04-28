@@ -255,7 +255,7 @@ article h1{
     text-align: center;
     float: left;
     width: 100%;
-    height: 50px;
+    min-height: 50px;
     background-color: darkorange;
     font-style: italic;
 }
@@ -264,7 +264,7 @@ article h1{
     background-color: beige;
     width: 100px;
     height: 200px;
-    float:none;
+    float:left;
 
 }
 
