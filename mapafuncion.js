@@ -40,10 +40,10 @@ $mapaElementos.onclick= function(e){
     alert("hiciste click en el equipamento : "+item);
    
 
-    document.getElementById("escenario").innerHTML+= Equipo.SCENARIO;
-    document.getElementById("area").innerHTML+= Equipo.AREA;
-    document.getElementById("local").innerHTML+= Equipo.LOCAL;
-    document.getElementById("nickname").innerHTML+= Equipo.NICKNAME;
+    document.getElementById("escenario").innerHTML= Equipo.SCENARIO;
+    document.getElementById("area").innerHTML= Equipo.AREA;
+    document.getElementById("local").innerHTML= Equipo.LOCAL;
+    document.getElementById("nickname").innerHTML= Equipo.NICKNAME;
 
 
 }
