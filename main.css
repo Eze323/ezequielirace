@@ -226,6 +226,11 @@ article h1{
 }
 
 
+#mapa{
+    float: left;
+    background-color: #ffe4c4;
+}
+
 
 #mapa div{
     background-color: aliceblue;
