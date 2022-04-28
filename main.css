@@ -268,6 +268,11 @@ article h1{
 
 }
 
+#detalles div{
+    float: left;
+    width: 25%;
+}
+
 /* Estilos para el Footer */
 
 footer{
