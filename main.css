@@ -22,6 +22,29 @@ body{width: 100%;
 
 }
 
+h1{
+    font-size: 2em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a{
+    color: #0BC5D8;
+}
+a:hover{
+    color: #EA6E39;
+}
+a:visited{
+    color: #AAAAAA;
+}
+a:active{
+    color: #FF0000;
+}
+/* Ancho de la página */
+
 
 .contenedor{
     max-width: 1024px;
