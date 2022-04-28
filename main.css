@@ -263,3 +263,15 @@ article h1{
 
 }
 
+/* Estilos para el Footer */
+
+footer{
+    background-color: #2E353E;
+    color: #fff;
+    clear: both;
+    line-height: 30px;
+    text-align: center;
+    padding: 45px;
+}
+
+
