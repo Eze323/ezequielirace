@@ -36,6 +36,7 @@ body{width: 100%;
     margin: auto;
     box-shadow:#3d5860 5px 5px;
     margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .ventana-login form{
