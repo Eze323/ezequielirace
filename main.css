@@ -71,6 +71,17 @@ body{width: 100%;
  width: 60%;
  padding: 15px;   
 }
+.resultado{
+    width: 86%;
+    margin: auto;
+}
+.green{
+    color:#9c9;
+}
+
+.red{
+    color:#c99;
+}
 
 
 body{
@@ -113,11 +124,3 @@ body{
 
 }
 
-
-.green{
-    color:#9c9;
-}
-
-.red{
-    color:#c99;
-}

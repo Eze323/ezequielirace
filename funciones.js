@@ -18,7 +18,7 @@ boton.addEventListener("click",(e)=>{
         }
 })
 
-const validarCampos = ()=>{
+const verificarCampos = ()=>{
     let error=[];
     if(usuario.value!='Admin' || clave.value!='123456'  ){
         error[0]=true;
