@@ -17,7 +17,7 @@ let Equipo ={
         methods:{
            getEquipos: function(){
                self=this;
-               axios.get('Output.json').then (response=>{
+               axios.get('https://eze323.github.io/ezequielirace/Output.json').then (response=>{
                    self.equipos = response.data;
                    console.log(self.equipos);
                })
@@ -31,7 +31,7 @@ let Equipo ={
     });
 
 //console.log(Equipo);
-
+/*
 function crearListado(cant){
 
         const nodoPagina = document.querySelector('#mapa')
@@ -53,7 +53,7 @@ function crearListado(cant){
         }
     return 
 }
-
+*/
 
 /*
 const $mapaElementos= document.querySelector("#mapa");
