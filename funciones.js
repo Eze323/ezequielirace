@@ -5,10 +5,29 @@ const clave = document.getElementById("clave");
 const boton = document.getElementById("btnIniciarSesion");
 const resultado = document.querySelector(".resultado");
 
+const errores={
+        nombre: errorUsuario,
+        clave: errorClave
+
+};
+
+
+
+function manejarErrores(errores){
+    const key =Object.keys(errores);
+    console.log(key);
+
+}
+
+const $form=document.querySelector("#frmSesion");
+
 boton.addEventListener("click",(e)=>{
         e.preventDefault();
-        let error = verificarCampos();
+        
+        manejarErrores(errores);
 
+        //let error = verificarCampos();
+        /*
         if(error[0]){
             resultado.innerHTML = error[1];
             resultado.classList.add("red");
@@ -18,6 +37,7 @@ boton.addEventListener("click",(e)=>{
             resultado.classList.add("green");
             resultado.classList.remove("red");
         }
+        */
 })
 
 const verificarCampos = ()=>{
@@ -36,3 +56,4 @@ const verificarCampos = ()=>{
 function clearInterval(){
     alert("hola mundo");
 }
+

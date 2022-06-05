@@ -8,6 +8,28 @@ let Equipo ={
     IS_MONITORED:"TRUE"
     };
 
+
+    new Vue({
+        el:'#app',
+        data:{
+           equipos:[],
+        },
+        methods:{
+           getEquipos: function(){
+               self=this;
+               axios.get('Output.json').then (response=>{
+                   self.equipos = response.data;
+                   console.log(self.equipos);
+               })
+           }
+        },
+        mounted:function(){
+           this.getEquipos();
+        }
+   
+   
+    });
+
 //console.log(Equipo);
 
 function crearListado(cant){
@@ -33,7 +55,7 @@ function crearListado(cant){
 }
 
 
-
+/*
 const $mapaElementos= document.querySelector("#mapa");
 $mapaElementos.onclick= function(e){
     let item = e.target.id;
@@ -51,7 +73,7 @@ $mapaElementos.onclick= function(e){
 
 crearListado(160);
 
-
+*/
 
 
 

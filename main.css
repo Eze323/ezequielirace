@@ -226,7 +226,7 @@ article h1{
 }
 
 
-#mapa{
+#mapa,#app{
     float: left;
     background-color: #ffe4c4;
 }
@@ -242,6 +242,22 @@ article h1{
     text-align: center;
     margin: 1px;
     padding: 10px;
+    
+}
+#app ul{padding: 0px;}
+#app ul li{
+    background-color: aliceblue;
+
+    /*font-family: 'MiFuente','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;*/
+    border: 3px solid #add8e6;
+    width: 50px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    margin: 1px;
+    padding: 10px;
+    list-style: none;
+    
     
 }
 #mapa div:hover{

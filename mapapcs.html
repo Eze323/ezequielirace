@@ -10,9 +10,10 @@
     <title>Monitor - Soporte Industrial</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     
-    <link rel='stylesheet' type='text/css' media='screen' href='https://eze323.github.io/ezequielirace/main.css'>
+    <!--link rel='stylesheet' type='text/css' media='screen' href='https://eze323.github.io/ezequielirace/main.css'>-->
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <link rel="stylesheet" type="text/css" href="https://eze323.github.io/ezequielirace/mq.css">
-    <!--<link rel='stylesheet' type='text/css' media='screen' href='main.css'>-->
+    
 </head>
 <body>
     <div class="contenedor">
@@ -37,7 +38,14 @@
             <div id="mapa" name="mapa">
                 
             </div>
+            <div id="app" name="mapa">
+                <ul>
+                    <li v-if="i.IS_MONITORED==='VERDADERO'" v-for="i in equipos">
+                    <div>    {{i.NICKNAME}}</div>
+                    </li>
+                </ul>
 
+            </div>
 
             
             <div id="footer">
@@ -65,9 +73,18 @@
             </footer>
         </div>
 
-    </div>            
+    </div>   
+    
+    
+
+
     <!--<script src='https://eze323.github.io/ezequielirace/mapafuncion.js'></script>-->
-    <script src='mapafuncion.js'></script>
+   
+    
+
+    <script type="text/javascript" src='vue.js'></script>
+    <script type="text/javascript" src='axios.min.js'></script>
+    <script type="text/javascript" src='mapafuncion.js'></script>
 
 
 </body>
