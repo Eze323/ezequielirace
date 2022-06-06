@@ -268,12 +268,12 @@ article h1{
 
 @media all and (min-width: 360px) and (max-width: 768px){
 #app ul li{
-   width: 15.5%;;
+   width: 17.2%;;
     }
 }
 @media all and (min-width: 768px) and (max-width: 1023px){
     #app ul li{
-    width:17.2%;
+    width:19%;
         
     }
 }
