@@ -260,6 +260,18 @@ article h1{
     
     
 }
+#app ul li:hover{
+    box-shadow: 0px 0px 30px #317124;
+    border-radius: 15px;
+    background-color: #d6e7ed;
+} 
+
+@media all and (min-width: 768px) and (max-width: 1023px){
+    #app ul li{
+    widht:18%;
+    }
+}
+
 #mapa div:hover{
     box-shadow: 0px 0px 30px #317124;
     border-radius: 15px;
