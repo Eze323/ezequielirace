@@ -9,13 +9,16 @@
         methods:{
            getEquipos: function(){
                self=this;
+               
                axios.get(this.rutaDeAcceso).then (response=>{
                    self.equipos = response.data;
-                   console.log(self.equipos);
+                self.equipos= equipos;
+               console.log(equipos);
+               //    console.log(self.equipos);
                })
            },
            propiedadesItem: function(item) {
-                const resultado = inventario.find( fruta => fruta.LOCATION_ID === item );
+                const resultado = this.equipos.find( fruta => fruta.LOCATION_ID === item );
                 console.log(resultado); // { nombre: 'cerezas', cantidad: 5 }
               //this.equipo=this.equipos.filter(item);
                //console.log(this.equipo);
