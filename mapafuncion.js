@@ -23,11 +23,11 @@
               //this.equipo=this.equipos.filter(item);
                //console.log(this.equipo);
                 
-            alert("hiciste click en el equipamento : "+item);
-            /*document.getElementById("escenario").innerHTML= this.equipos[item].SCENARIO;
-            document.getElementById("area").innerHTML= Equipo.AREA;
-            document.getElementById("local").innerHTML= Equipo.LOCAL;
-            document.getElementById("nickname").innerHTML= Equipo.NICKNAME;           */
+                alert("hiciste click en el equipamento : "+item);
+                document.getElementById("escenario").innerHTML= equipo.SCENARIO;
+                document.getElementById("area").innerHTML= equipo.AREA;
+                document.getElementById("local").innerHTML= equipo.LOCAL;
+                document.getElementById("nickname").innerHTML= equipo.NICKNAME;
            },
 
         },
