@@ -35,19 +35,20 @@
                 </header>
 
 
-            <div id="mapa" name="mapa">
-                
-            </div>
-            <div id="app" name="mapa">
-                <ul>
-                    <li v-if="i.IS_MONITORED==='VERDADERO'" v-for="i in equipos">
-                    <div>    {{i.NICKNAME}}</div>
-                    </li>
-                </ul>
+            <!--<div id="mapa" name="mapa">            </div>-->
+        
+                        <div id="app" name="mapa">
+                            <ul>
+                                <li v-if="i.IS_MONITORED==='VERDADERO'" v-for="i in equipos" @click="propiedadesItem(i.LOCATION_ID)">
+                                    <div>
+                                        {{i.NICKNAME}}
+                                    </div>
+                                </li>
+                            </ul>
 
-            </div>
+                        </div>
 
-            
+
             <div id="footer">
                 <h2>Especificaciones Equipos</h2>
                 <div id="destalles" name="detalles">
@@ -84,8 +85,8 @@
 
     <script type="text/javascript" src='https://eze323.github.io/ezequielirace/vue.js'></script>
     <script type="text/javascript" src='https://eze323.github.io/ezequielirace/axios.min.js'></script>
-<!--    <script type="text/javascript" src='mapafuncion.js'></script>-->
-<script type="text/javascript"  src='https://eze323.github.io/ezequielirace/mapafuncion.js'></script>
+    <script type="text/javascript" src='mapafuncion.js'></script>
+<!--<script type="text/javascript"  src='https://eze323.github.io/ezequielirace/mapafuncion.js'></script>-->
 
 </body>
 </html>
