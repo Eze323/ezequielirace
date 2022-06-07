@@ -15,8 +15,9 @@
                })
            },
            propiedadesItem: function(item) {
-               //this.equipo=this.equipos.filter(item);
-                   
+                const resultado = inventario.find( fruta => fruta.LOCATION_ID === item );
+                console.log(resultado); // { nombre: 'cerezas', cantidad: 5 }
+              //this.equipo=this.equipos.filter(item);
                //console.log(this.equipo);
                 
             alert("hiciste click en el equipamento : "+item);
