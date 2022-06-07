@@ -12,7 +12,7 @@
                
                axios.get(this.rutaDeAcceso).then (response=>{
                    self.equipos = response.data;
-                self.equipos= equipos;
+                self.equipo = equipos;
                console.log(equipos);
                //    console.log(self.equipos);
                })
