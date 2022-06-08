@@ -3,27 +3,32 @@
         data:{
            //rutaDeAcceso:'https://eze323.github.io/ezequielirace/Localizacion.json',
            rutaDeAcceso:'Localizacion.json',
-           equipo:[],
+           equipo:[ {
+            "LOCATION_ID": "1325",
+            "SCENARIO": "FABRICA",
+            "AREA": "CONTROL FINAL",
+            "LOCAL": "AKRODYNE 3",
+            "LOCAL_DETAIL": "AKRO 3",
+            "NICKNAME": "AKRO 3",
+            "IS_MONITORED": "VERDADERO",
+            "DOCUMENTATION_PATH": ""
+        }],
            equipos:[],
         },
         methods:{
            getEquipos: function(){
                self=this;
-               
                axios.get(this.rutaDeAcceso).then (response=>{
                    self.equipos = response.data;
-                self.equipo = self.equipos;
-               console.log(equipos);
-               //    console.log(self.equipos);
+                   console.log(self.equipos);
                })
            },
            propiedadesItem: function(item) {
-                const resultado = this.equipos.find( fruta => fruta.LOCATION_ID === item );
-                console.log(resultado); // { nombre: 'cerezas', cantidad: 5 }
-              //this.equipo=this.equipos.filter(item);
-               //console.log(this.equipo);
-                
-                alert("hiciste click en el equipamento : "+item);
+                self=this;
+               //const equipo=self.equipos.find(self.equipos=>self.equipos.LOCATION_ID===item)
+               const equipo = this.equipos.find( fruta => fruta.LOCATION_ID === item );
+                console.log(equipo); 
+
                 document.getElementById("escenario").innerHTML= equipo.SCENARIO;
                 document.getElementById("area").innerHTML= equipo.AREA;
                 document.getElementById("local").innerHTML= equipo.LOCAL;

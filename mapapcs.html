@@ -1,92 +1,111 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="icon"  type="image/x-icon" href="https://eze323.github.io/ezequielirace/favicon.ico">
-    <link rel="icon" type="image/png" sizes="192x192"  href="https://eze323.github.io/ezequielirace/android-icon-192x192.png">
+    <link rel="icon" type="image/x-icon" href="https://eze323.github.io/ezequielirace/favicon.ico">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="https://eze323.github.io/ezequielirace/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="96x96" href="https://eze323.github.io/ezequielirace/favicon-96x96.png">
     <link rel="manifest" href="https://eze323.github.io/ezequielirace/manifest.json">
     <title>Monitor - Soporte Industrial</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
+
     <link rel='stylesheet' type='text/css' media='screen' href='https://eze323.github.io/ezequielirace/main.css'>
     <!--link rel='stylesheet' type='text/css' media='screen' href='main.css'>-->
     <link rel="stylesheet" type="text/css" href="https://eze323.github.io/ezequielirace/mq.css">
-    
+
 </head>
+
 <body>
     <div class="contenedor">
-                <!-- En el header están el logo y el banner -->
+        <!-- En el header están el logo y el banner -->
 
-                <header>
-                    <div class="logo"><img src="https://eze323.github.io/ezequielirace/logo.png" alt="Logo de la empresa" ></div>
+        <header>
+            <div class="logo"><img src="https://eze323.github.io/ezequielirace/logo.png" alt="Logo de la empresa"></div>
 
-                <!-- Menu de navegación -->
+            <!-- Menu de navegación -->
 
-                    <nav>
-                        <ul>
-                            <li class="menu-item"><a href="https://eze323.github.io/ezequielirace/index.html"><div>inicio</div></a></li>
-                            <li class="menu-item"><a href="#"><div>nosotros</div></a></li>
-                            <li class="menu-item"><a href="https://eze323.github.io/ezequielirace/mapapcs.html"><div>sistema</div></a></li>
-                            <li class="menu-item"><a href="#"><div>contacto</div></a></li>
-                        </ul>
-                    </nav>
-                </header>
-
-
-            <!--<div id="mapa" name="mapa">            </div>-->
-        
-                        <div id="app" name="mapa">
-                            <ul>
-                                <li v-if="i.IS_MONITORED==='VERDADERO'" v-for="i in equipos" @click="propiedadesItem(i.LOCATION_ID)">
-                                    <div>
-                                        {{i.NICKNAME}}
-                                    </div>
-                                </li>
-                            </ul>
-
-                        </div>
+            <nav>
+                <ul>
+                    <li class="menu-item"><a href="https://eze323.github.io/ezequielirace/index.html">
+                            <div>inicio</div>
+                        </a></li>
+                    <li class="menu-item"><a href="#">
+                            <div>nosotros</div>
+                        </a></li>
+                    <li class="menu-item"><a href="https://eze323.github.io/ezequielirace/mapapcs.html">
+                            <div>sistema</div>
+                        </a></li>
+                    <li class="menu-item"><a href="#">
+                            <div>contacto</div>
+                        </a></li>
+                </ul>
+            </nav>
+        </header>
 
 
-            <div id="footer">
-                <h2>Especificaciones Equipos</h2>
-                <div id="destalles" name="detalles">
-                     <div id="escenario" class="detall">Escenario: </div>
-                     <div id="area" class="detall">Area: </div>
-                     <div id="local" class="detall">Localizacion: </div>
-                     <div id="nickname" class="detall">NickName: </div>
+        <!--<div id="mapa" name="mapa">            </div>-->
 
-                </div>    
-            </div>
+        <div id="app" name="mapa">
+            <ul>
+                <li v-if="(i.IS_MONITORED==='VERDADERO' && i.SCENARIO==='FABRICA')" v-for="i in equipos"
+                    @click="propiedadesItem(i.LOCATION_ID)">
+                    <div>
+                        {{i.NICKNAME}}
+                    </div>
+                </li>
+            </ul>
 
-    
-
-<!-- Pié de página -->
-
-            <footer>
-                <address>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula urna feugiat justo dignissim consequat.</address>
-                <div>
-                    <a href="#">lorem ipsum</a> |
-                    <a href="#">dolor sit amet</a> |
-                    <a href="#">dignissim</a>
-                </div>
-            </footer>
         </div>
 
-    </div>   
-    
-    
+
+        <div id="footer">
+            <h2>Especificaciones Equipo</h2>
+            <div id="destalles" name="detalles">
+                <div class="detall">Escenario:<div id="escenario"> </div>
+                </div>
+                <div class="detall">Area: <div id="area"> </div>
+                </div>
+
+                <div class="detall">Localizacion: <div id="local"> </div>
+                </div>
+                <div class="detall">NickName: <div id="nickname"> </div>
+                </div>
+
+            </div>
+        </div>
 
 
-    
-   
-    
+
+        <!-- Pié de página -->
+
+        <footer>
+            <address>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vehicula urna feugiat justo
+                dignissim consequat.</address>
+            <div>
+                <a href="#">lorem ipsum</a> |
+                <a href="#">dolor sit amet</a> |
+                <a href="#">dignissim</a>
+            </div>
+        </footer>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
 
     <script type="text/javascript" src='https://eze323.github.io/ezequielirace/vue.js'></script>
     <script type="text/javascript" src='https://eze323.github.io/ezequielirace/axios.min.js'></script>
     <script type="text/javascript" src='mapafuncion.js'></script>
-<!--<script type="text/javascript"  src='https://eze323.github.io/ezequielirace/mapafuncion.js'></script>-->
+    <!--<script type="text/javascript"  src='https://eze323.github.io/ezequielirace/mapafuncion.js'></script>-->
 
 </body>
+
 </html>
