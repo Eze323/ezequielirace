@@ -9,10 +9,6 @@
 html {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-}
-
-
-html{
     min-height: 100%;
     position: relative;
 }
@@ -154,17 +150,14 @@ article h1{
 }
 
 
-
-
-
 .ventana-login h2{
     display: block;
     width: 100%;
     text-align: center;
     color: #d3e9e9;
 }
+
 .ventana-login{
-    
     margin: 20px;
     min-width:300px ;
     min-height: 200px;;
@@ -273,7 +266,7 @@ article h1{
 }
 @media all and (min-width: 768px) and (max-width: 1023px){
     #app ul li{
-    width:19%;
+    width:8%;
         
     }
 }
